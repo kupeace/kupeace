@@ -10,7 +10,11 @@ interface Props {
 const { loading = 'eager' }: Props = Astro.props
 ---
 
-<Link href="/kupeace/" class="flex items-center gap-2">
+<Link
+  href="/kupeace/"
+  class="flex items-center gap-2 no-underline"
+  style="text-decoration: none !important;"
+>
   {
     themeConfig.logo && (
       <Image
