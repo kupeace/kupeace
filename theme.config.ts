@@ -3,8 +3,8 @@ import previewImage from '@assets/img/social-preview-image.png'
 import logoImage from '@assets/img/logo.svg'
 
 export default defineThemeConfig({
-  name: 'Accessible Astro',
-  id: 'accessible-astro-starter',
+  name: 'Kuvempu PEACE',
+  id: 'kupeace',
   logo: logoImage,
   seo: {
     title: 'Accessible Astro Starter',
