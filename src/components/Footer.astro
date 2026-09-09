@@ -1,5 +1,5 @@
 ---
-import { Heading, Link } from 'accessible-astro-components'
+import { Heading } from 'accessible-astro-components'
 import Logo from './Logo.astro'
 
 const year = new Date().getFullYear()
@@ -14,14 +14,10 @@ const year = new Date().getFullYear()
           A student-first guide to campus life, the forest we call home, and everything in between — an initiative of the Kuvempu University Planning, Monitoring and Evaluation Board (PMEB).
         </p>
       </div>
-      <nav aria-label="Footer">
-        <Heading level="h2" class="mb-4 text-lg">Explore</Heading>
-        <ul class="space-y-2">
-          <li><Link href="/kupeace/">Home</Link></li>
-          <li><Link href="/kupeace/campus">My Forest Laboratory</Link></li>
-          <li><Link href="/kupeace/activities">Activities &amp; Sign-Ups</Link></li>
-        </ul>
-      </nav>
+      <div>
+        <Heading level="h2" class="mb-4 text-lg">More Links</Heading>
+        <p class="text-sm text-gray-500">Coming soon.</p>
+      </div>
     </div>
     <div class="mt-12 pt-8 border-t border-gray-200 text-sm">
       &copy; {year} Kuvempu University — Kuvempu PEACE, a PMEB initiative.
