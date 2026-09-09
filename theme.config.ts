@@ -34,8 +34,8 @@ export default defineThemeConfig({
       },
       {
         type: 'link',
-        label: 'My Clean & Green Campus',
-        href: '/kupeace/clean-green',
+        label: 'My Clean Campus',
+        href: '/kupeace/clean-campus',
       },
       {
         type: 'link',
