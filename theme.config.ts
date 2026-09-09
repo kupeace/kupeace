@@ -7,17 +7,17 @@ export default defineThemeConfig({
   id: 'kupeace',
   logo: logoImage,
   seo: {
-    title: 'Accessible Astro Starter',
+    title: 'Kuvempu PEACE',
     description:
-      'An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster.',
-    author: 'Incluud',
+      'A student-first guide to campus life, the forest we call home, and everything in between — an initiative of the Kuvempu University Planning, Monitoring and Evaluation Board (PMEB).',
+    author: 'Kuvempu University PMEB',
     image: previewImage, // Can also be a string e.g. '/social-preview-image.png',
   },
   colors: {
-    primary: '#d648ff',
-    secondary: '#00d1b7',
-    neutral: '#b9bec4',
-    outline: '#ff4500',
+    primary: '#2f6b3c',
+    secondary: '#1a936f',
+    neutral: '#8a8f85',
+    outline: '#e0a72e',
   },
   navigation: {
     darkmode: true,
@@ -25,86 +25,34 @@ export default defineThemeConfig({
       {
         type: 'link',
         label: 'Home',
-        href: '/',
+        href: '/kupeace/',
       },
       {
         type: 'link',
-        label: 'Blog',
-        href: '/blog',
+        label: 'My Forest Laboratory',
+        href: '/kupeace/campus',
       },
       {
         type: 'link',
-        label: 'Portfolio',
-        href: '/portfolio',
-      },
-      {
-        label: 'Features',
-        type: 'dropdown',
-        items: [
-          {
-            label: 'Accessibility statement',
-            href: '/accessibility-statement',
-          },
-          {
-            label: 'Accessible components',
-            href: '/accessible-components',
-          },
-          {
-            label: 'Accessible launcher',
-            href: '/accessible-launcher',
-          },
-          {
-            label: 'Color contrast checker',
-            href: '/color-contrast-checker',
-          },
-          {
-            label: 'Markdown page',
-            href: '/markdown-page',
-          },
-          {
-            label: 'MDX page',
-            href: '/mdx-page',
-          },
-          {
-            label: '404 page',
-            href: '/404',
-          },
-          {
-            label: 'Sitemap',
-            href: '/sitemap',
-          },
-        ],
+        label: 'My Clean & Green Campus',
+        href: '/kupeace/clean-green',
       },
       {
         type: 'link',
-        label: 'Contact',
-        href: '/contact',
+        label: 'IT Guide',
+        href: '/kupeace/it-guide',
       },
       {
         type: 'link',
-        label: 'Go to our GitHub page, opens in new tab',
-        href: 'https://github.com/incluud/accessible-astro-starter',
-        icon: 'lucide:github',
-        external: true,
-        excludeFromLauncher: true,
+        label: 'Research Tools',
+        href: '/kupeace/research-tools',
+      },
+      {
+        type: 'link',
+        label: 'Activities & Sign-Ups',
+        href: '/kupeace/activities',
       },
     ],
   },
-  socials: [
-    {
-      label: 'GitHub',
-      href: 'https://github.com/incluud/',
-      icon: 'lucide:github',
-    },
-    {
-      label: 'Bluesky',
-      href: 'https://bsky.app/profile/incluud.dev',
-      icon: 'lucide:bot-message-square',
-    },
-    {
-      label: 'Open Collective',
-      href: 'https://opencollective.com/incluud',
-      icon: 'lucide:hand-heart',
-    },
-  ],
+  socials: [],
 })
