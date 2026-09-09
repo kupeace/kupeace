@@ -1,0 +1,75 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Heading, Link } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Research Tools & Productivity — Kuvempu PEACE" useTitleTemplate={false}>
+  <section class="relative overflow-hidden">
+    <img
+      src="https://picsum.photos/seed/kuvempu-research-tools/1600/700"
+      alt="Placeholder banner image for Research Tools — to be replaced with real photography"
+      class="w-full h-[45vh] object-cover"
+    />
+    <div class="container mx-auto py-12 text-center">
+      <Heading level="h1" class="text-3xl md:text-5xl font-bold mb-4">Research Tools &amp; Productivity</Heading>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Small-batch, hands-on training to help you organise data, analyse it with open-source tools, and write it up — so you spend less time on mechanical work and more time on your actual research.
+      </p>
+    </div>
+  </section>
+
+  <section class="my-24">
+    <div class="container mx-auto max-w-3xl">
+
+      <Heading level="h2" class="mb-4">Module 1: Data Organization and Analysis Using Open-Source Tools</Heading>
+      <p class="mb-4 text-lg">
+        An introductory module to get you started on your own — not a deep dive into every nuance. It gives you the tools and hands-on practice to explore your own data and build your own code, before moving on to Module 2.
+      </p>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Tabular and long-form data — organising data for presentation versus for analysis.</li>
+        <li>Open-source data analysis tools (R, Python, Java, and others) — open-source versus proprietary tools, and the ethics around each.</li>
+        <li>Why R? Its evolution as an open-source scientific language, its role in analysis and plotting, and why it makes results repeatable.</li>
+        <li>Introduction to RStudio — a friendlier interface for writing and visualising R code.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">Module 2: Basics of Data Analysis Using R</Heading>
+      <p class="mb-4 text-lg">
+        Requires completion of Module 1. This is a <strong>Bring Your Own Data (BYOD)</strong> session — come with your own data, organised in a form R can read. Framed largely from an ecology and ecophysiology perspective; broadly relevant to life sciences and environmental science, partly relevant to chemistry, and less applicable to physics or mathematics.
+      </p>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>A refresher on R and what was covered in Module 1.</li>
+        <li>Basic ecological statistics: measures of central tendency, scatter plots, boxplots, understanding variance.</li>
+        <li>Curve fitting and modelling basics.</li>
+        <li>Mixed-effects modelling, analysis of variance, and variance partitioning — disentangling where variance in your data actually comes from.</li>
+        <li>Statistical significance and interpretation — including when to stop reading too much into a fit.</li>
+        <li>Signal-to-noise ratio, measurability of a system, minimum detection limit, and minimum detectable difference.</li>
+        <li>What makes a good plot, and the basics of calibration and linearity.</li>
+        <li>Coming back to experimental design and sample-size calculation with all of the above in mind.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">Module 3: Data Handling and IT Skills for Researchers</Heading>
+      <p class="mb-4 text-lg">A working computer with a reasonable browser is all you need.</p>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Cloud storage — where to store data and written work, and where not to, plus sensible file naming and archiving.</li>
+        <li>Email basics — professional style, and securing your account with two-factor authentication.</li>
+        <li>Getting your name right — the first-name/surname distinction, and why you shouldn't use your first name as your surname in academic records.</li>
+        <li>ORCID — what it is and why every researcher should have one.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">Module 4: Open-Source Word Processing and Reference Management</Heading>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Introduction to LibreOffice.</li>
+        <li>Introduction to Zotero.</li>
+        <li>Using the University-recommended thesis template.</li>
+      </ul>
+
+    </div>
+
+    <div class="container mx-auto text-center max-w-3xl">
+      <blockquote class="text-2xl md:text-3xl italic font-medium mb-12">
+        The goal isn't a certificate — it's walking away able to use these tools on your own research.
+      </blockquote>
+      <Link href="/kupeace/activities" class="px-6 py-3 rounded-lg bg-green-700 text-white font-semibold hover:bg-green-800">Sign Up for a Session</Link>
+    </div>
+  </section>
+</DefaultLayout>
