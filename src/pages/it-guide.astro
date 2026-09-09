@@ -1,0 +1,54 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Heading, Link } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="IT Guide — Kuvempu PEACE" useTitleTemplate={false}>
+  <section class="relative overflow-hidden">
+    <img
+      src="https://picsum.photos/seed/kuvempu-it-guide/1600/700"
+      alt="Placeholder banner image for the IT Guide — to be replaced with real photography"
+      class="w-full h-[45vh] object-cover"
+    />
+    <div class="container mx-auto py-12 text-center">
+      <Heading level="h1" class="text-3xl md:text-5xl font-bold mb-4">IT Guide</Heading>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Small-batch, hands-on training in the everyday digital habits that make research and university life smoother — not another software manual, but the things nobody actually teaches you.
+      </p>
+    </div>
+  </section>
+
+  <section class="my-24">
+    <div class="container mx-auto max-w-3xl">
+
+      <Heading level="h2" class="mb-4">Email and Communication</Heading>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>How to write a clear, professional email — what to include, and what to leave out.</li>
+        <li>Setting up and using two-factor authentication to keep your account secure.</li>
+        <li>Communicating with researchers outside India — tone, timing, and etiquette across time zones.</li>
+        <li>Communicating with researchers within India, and with your own faculty and university offices — these aren't the same conversation, and shouldn't sound the same.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">File and Cloud Management</Heading>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Organising files and folders so you (and your collaborators) can actually find things later.</li>
+        <li>Sensible file naming conventions.</li>
+        <li>Using cloud storage for backup and collaborative work — and knowing what shouldn't go on the cloud.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">Research and AI Tools</Heading>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Strategies for searching the literature efficiently, instead of drowning in search results.</li>
+        <li>Responsible, transparent use of AI tools in your research and writing.</li>
+      </ul>
+
+    </div>
+
+    <div class="container mx-auto text-center max-w-3xl">
+      <blockquote class="text-2xl md:text-3xl italic font-medium mb-12">
+        The goal isn't just learning to use the software — it's building efficient, repeatable, responsible digital habits.
+      </blockquote>
+      <Link href="/kupeace/activities" class="px-6 py-3 rounded-lg bg-green-700 text-white font-semibold hover:bg-green-800">Sign Up for a Session</Link>
+    </div>
+  </section>
+</DefaultLayout>
