@@ -3,30 +3,20 @@ import { Link } from 'accessible-astro-components'
 import { Image } from 'astro:assets'
 import themeConfig from '@theme-config'
 
-/**
- * Logo Component
- *
- * @description Logo description
- */
 interface Props {
-  /**
-   * Whether to load the image eagerly or lazily
-   * @default 'eager'
-   */
   loading?: 'eager' | 'lazy'
 }
 
 const { loading = 'eager' }: Props = Astro.props
 ---
 
-<Link href="/" class="flex items-center gap-2">
+<Link href="/kupeace/" class="flex items-center gap-2">
   {
     themeConfig.logo && (
       <Image
         src={themeConfig.logo}
-        alt=""
-        aria-hidden="true"
-        width="47"
+        alt={themeConfig.name}
+        width="37"
         height="37"
         loading={loading}
       />
