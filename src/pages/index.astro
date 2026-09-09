@@ -6,8 +6,8 @@ import { Heading, Link } from 'accessible-astro-components'
 <DefaultLayout title="Kuvempu PEACE — Your Campus. Your Experience." useTitleTemplate={false}>
   <section class="relative overflow-hidden">
     <img
-      src="https://picsum.photos/seed/kuvempu-forest-hero/1600/900"
-      alt="Placeholder image of the Kuvempu University forest campus — to be replaced with real campus photography"
+      src="/kupeace/images/hero-campus-view.jpg"
+      alt="Misty view of the Kuvempu University campus surrounded by forest, with the Western Ghats hills in the background"
       class="w-full h-[60vh] object-cover"
     />
     <div class="container mx-auto py-16 text-center">
@@ -16,8 +16,8 @@ import { Heading, Link } from 'accessible-astro-components'
         A student-first guide to life at Kuvempu University — the campus, the forest it lives in, and everything in between.
       </p>
       <div class="flex flex-wrap gap-4 justify-center">
-        <Link href="/campus" class="px-6 py-3 rounded-lg bg-green-700 text-white font-semibold hover:bg-green-800">Explore the Campus</Link>
-        <Link href="/activities" class="px-6 py-3 rounded-lg border border-green-700 text-green-700 font-semibold hover:bg-green-50">See What's On</Link>
+        <Link href="/kupeace/campus" class="px-6 py-3 rounded-lg bg-green-700 text-white font-semibold hover:bg-green-800">Explore the Campus</Link>
+        <Link href="/kupeace/activities" class="px-6 py-3 rounded-lg border border-green-700 text-green-700 font-semibold hover:bg-green-50">See What's On</Link>
       </div>
     </div>
   </section>
@@ -27,7 +27,7 @@ import { Heading, Link } from 'accessible-astro-components'
       <Heading level="h2" class="mb-8 text-center">What You'll Find Here</Heading>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <div class="rounded-lg shadow-md overflow-hidden bg-white">
-          <img src="https://picsum.photos/seed/kuvempu-forest-lab/600/400" alt="Placeholder image for My Forest Laboratory" class="h-40 w-full object-cover" />
+          <img src="/kupeace/images/forest-laboratory-deer.jpg" alt="Spotted deer among trees in the forest surrounding the Kuvempu University campus" class="h-40 w-full object-cover" />
           <div class="p-6">
             <Heading level="h3" class="mb-2">My Forest Laboratory</Heading>
             <p>We're the only campus in India embedded in a tropical evergreen Western Ghats forest, right beside the Bhadra Tiger Reserve.</p>
@@ -55,7 +55,7 @@ import { Heading, Link } from 'accessible-astro-components'
           </div>
         </div>
         <div class="rounded-lg shadow-md overflow-hidden bg-white">
-          <img src="https://picsum.photos/seed/kuvempu-activities/600/400" alt="Placeholder image for Activities and Sign-Ups" class="h-40 w-full object-cover" />
+          <img src="/kupeace/images/campus-cultural-event.jpg" alt="Students gathered for a candlelit cultural event on campus at night" class="h-40 w-full object-cover" />
           <div class="p-6">
             <Heading level="h3" class="mb-2">Activities &amp; Sign-Ups</Heading>
             <p>Treks, forest walks, workshops, and campus events — open to every student, every department.</p>
