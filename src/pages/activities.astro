@@ -1,0 +1,59 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Heading, Link } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Activities & Sign-Ups — Kuvempu PEACE" useTitleTemplate={false}>
+  <section class="relative overflow-hidden">
+    <img
+      src="/kupeace/images/campus-cultural-event.jpg"
+      alt="Students gathered for a candlelit cultural event on campus at night"
+      class="w-full h-[50vh] object-cover"
+    />
+    <div class="container mx-auto py-12 text-center">
+      <Heading level="h1" class="text-3xl md:text-5xl font-bold mb-4">Activities &amp; Sign-Ups</Heading>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        This is the menu, not the notice board. Everything here is open to any student, from any department — no prerequisites beyond curiosity.
+      </p>
+    </div>
+  </section>
+
+  <section class="my-24">
+    <div class="container mx-auto max-w-3xl">
+
+      <Heading level="h2" class="mb-4">Forest Walks, Treks &amp; Wildlife Experiences</Heading>
+      <p class="mb-8 text-lg">
+        Organised in collaboration with the Forest Department — guided forest walks, treks and hikes, wildlife and biodiversity experiences, and bird-watching sessions across the landscape surrounding the Bhadra Tiger Reserve. See <Link href="/kupeace/campus">My Forest Laboratory</Link> for the full picture.
+      </p>
+
+      <Heading level="h2" class="mb-4">Campus &amp; Cultural Events</Heading>
+      <p class="mb-8 text-lg">
+        Cultural nights, festivals, and other campus gatherings — the fun, informal side of student life here, shared as invitations rather than notices.
+      </p>
+
+      <Heading level="h2" class="mb-4">Skill-Building Sessions</Heading>
+      <p class="mb-8 text-lg">
+        Small-batch, hands-on training in digital and research skills — see the <Link href="/kupeace/it-guide">IT Guide</Link> and <Link href="/kupeace/research-tools">Research Tools &amp; Productivity</Link> pages for what's currently on offer.
+      </p>
+
+      <Heading level="h2" class="mb-4">Campus Stewardship</Heading>
+      <p class="mb-8 text-lg">
+        Join as a Clean Auditor and work directly with our cleaning staff to keep the campus–forest interface healthy — details on the <Link href="/kupeace/clean-campus">My Clean Campus</Link> page.
+      </p>
+
+      <div class="bg-green-50 rounded-lg p-6 mt-12">
+        <Heading level="h3" class="mb-2">Sign-Ups Open Soon</Heading>
+        <p class="text-lg">
+          We're rolling out sign-up forms for each activity here. Check back on this page, or watch our social channels, for dates and registration links as they go live.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container mx-auto text-center max-w-3xl">
+      <blockquote class="text-2xl md:text-3xl italic font-medium">
+        Not a notice board — a menu of everything Kuvempu has to offer beyond the classroom.
+      </blockquote>
+    </div>
+  </section>
+</DefaultLayout>
