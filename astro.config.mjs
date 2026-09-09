@@ -39,6 +39,7 @@ const viteConfig = {
 export default defineConfig({
   compressHTML: true,
   site: 'https://kupeace.github.io',
+  base: '/kupeace',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: viteConfig,
   env: {
