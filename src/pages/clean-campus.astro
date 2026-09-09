@@ -1,0 +1,53 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Heading, Link } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="My Clean Campus — Kuvempu PEACE" useTitleTemplate={false}>
+  <section class="relative overflow-hidden">
+    <img
+      src="https://picsum.photos/seed/kuvempu-clean-green/1600/700"
+      alt="Placeholder banner image for My Clean Campus — to be replaced with real campus photography"
+      class="w-full h-[45vh] object-cover"
+    />
+    <div class="container mx-auto py-12 text-center">
+      <Heading level="h1" class="text-3xl md:text-5xl font-bold mb-4">My Clean Campus</Heading>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Our campus is naturally green because of the Western Ghats forest it sits within — so our real responsibility isn't creating a "green campus," it's keeping the campus–forest interface clean and ecologically sensitive.
+      </p>
+    </div>
+  </section>
+
+  <section class="my-24">
+    <div class="container mx-auto max-w-3xl">
+      <p class="mb-8 text-lg">
+        The University already has capable, hardworking cleaning staff. What helps them do even better is small, continuous improvements — and that's where students come in, not as a separate team, but as partners.
+      </p>
+
+      <Heading level="h2" class="mb-4">Meet the Clean Auditors</Heading>
+      <p class="mb-8 text-lg">
+        Coordinated by the Department of Environmental Science, second-year Master's students are assigned as <strong>Clean Auditors</strong> to defined zones across campus. Each auditor is connected directly with the cleaning staff responsible for that zone — names, contact details, and a direct line of communication.
+      </p>
+
+      <Heading level="h2" class="mb-4">What a Clean Auditor Does</Heading>
+      <ul class="list-disc pl-6 mb-8 text-lg space-y-2">
+        <li>Helps segregate waste at the source — so biodegradable and non-biodegradable trash never mix in the first place.</li>
+        <li>Flags issues as they come up: stray plastic, construction debris, lab waste, or trash left after a campus event.</li>
+        <li>Coordinates directly with the cleaning staff responsible for that zone to get it resolved quickly.</li>
+        <li>Can pitch in and help with the cleanup itself, when needed.</li>
+      </ul>
+
+      <Heading level="h2" class="mb-4">Observe → Communicate → Correct → Document → Improve</Heading>
+      <p class="mb-8 text-lg">
+        Once an issue is resolved, the auditor and the cleaning staff member take a photo together — a simple record of the fix, and a small celebration of the partnership. These photos feed a recognition board, so the people doing this work are seen and thanked, not invisible.
+      </p>
+    </div>
+
+    <div class="container mx-auto text-center max-w-3xl">
+      <blockquote class="text-2xl md:text-3xl italic font-medium mb-12">
+        Students and cleaning staff, working side by side — not as separate teams, but as partners in the same campus.
+      </blockquote>
+      <Link href="/kupeace/activities" class="px-6 py-3 rounded-lg bg-green-700 text-white font-semibold hover:bg-green-800">Sign Up to Get Involved</Link>
+    </div>
+  </section>
+</DefaultLayout>
